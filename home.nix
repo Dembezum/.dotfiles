@@ -13,7 +13,16 @@
 
    home.packages = with pkgs; [
 # Add packages here
-   ripgrep
+    ripgrep
+    firefox
+    neovim
+    kitty
+    xclip
+    tmux
+    htop
+    btop
+    git
+    eza
    neofetch
    ];
 
