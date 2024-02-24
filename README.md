@@ -1,2 +1,1 @@
-# .dotfiles
-# .dotfiles
+# Silly attempt at setting up Nixos
