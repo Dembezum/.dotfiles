@@ -1,10 +1,11 @@
 { config, pkgs, lib, ... }:
 
-imports = [
-   ./system/sh.nix
-];
 
 {
+    imports = [
+        ./system/sh.nix
+    ];
+
    home.username = "nixtop";
    home.homeDirectory = "/home/nixtop";
    home.stateVersion = "23.11";
