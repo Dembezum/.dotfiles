@@ -13,6 +13,8 @@
       gcc
       binutils
       clang
+      curl
+      wget
       cmake
       pkg-config
       fontconfig

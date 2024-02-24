@@ -88,23 +88,6 @@
     isNormalUser = true;
     description = "nixtop";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      git
-        kitty
-        firefox
-        neovim
-        eza
-        discord
-        curl
-        wget
-        neovim
-        tmux
-        htop
-        btop
-        dstat
-        xclip
-        kitty
-    ];
   };
 
 # Allow unfree packages
@@ -116,6 +99,7 @@
 #      enable = true;
 #      settings.PasswordAuthentication = true;
 #   settings.PermitRootLogin = "yes";
+
 
 # Open ports in the firewall.
 networking.firewall.allowedTCPPorts = [
