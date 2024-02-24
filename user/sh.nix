@@ -51,6 +51,7 @@
          export HISTFILESIZE=10000
          export HISTCONTROL=ignoredups
          export HISTTIMEFORMAT="%F %T "
+         export NIXPKGS_ALLOW_UNFREE=1
          shopt -s histappend
          PS1='\[\e[0;34m\][\[\e[0;34m\]\u\[\e[0;34m\]] \[\e[0;35m\]/\[\e[0;35m\]\W\[\e[0m\]]\[\e[0;32m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2) \[\e[0;37m\]\$ \[\e[0m\]'
          '';
