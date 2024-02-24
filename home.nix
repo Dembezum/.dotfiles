@@ -27,8 +27,8 @@
          background_opacity 0.9
          opacity 0.9
          colors 16
-         font_weight bold
-         font_style italic
+         font_weight regular
+         font_style regular 
          allow_remote_control yes
          scrollback_lines 10000
          enable_audio_bell = false;
