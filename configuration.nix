@@ -11,6 +11,7 @@
     ./global/core.nix
     ];
 
+
 # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
