@@ -1,5 +1,9 @@
 { config, pkgs, lib, ... }:
 
+imports = [
+   ./system/sh.nix
+];
+
 {
    home.username = "nixtop";
    home.homeDirectory = "/home/nixtop";
