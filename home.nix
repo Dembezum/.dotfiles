@@ -10,9 +10,9 @@
   };
 
 imports = [
-  ./user/core.nix
+  ./system/core.nix
   ./user/media.nix
-  ./user/sh.nix
+  ./system/sh.nix
 ];
 
 home.username = "nixtop";

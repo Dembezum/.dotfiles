@@ -9,6 +9,7 @@
     tmux
     htop
     btop
+    tree
     git
     eza
   ];
