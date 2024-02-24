@@ -1,9 +1,9 @@
 { config, pkgs, lib, ... }:
 
-
 {
     imports = [
         ./user/core.nix
+        ./user/media.nix
         ./user/sh.nix
     ];
 
@@ -11,23 +11,9 @@
    home.homeDirectory = "/home/nixtop";
    home.stateVersion = "23.11";
 
-   home.packages = with pkgs; [
-# Add packages here
-    ripgrep
-    firefox
-    neovim
-    kitty
-    xclip
-    tmux
-    htop
-    btop
-    git
-    eza
-   neofetch
-   ];
-
    home.file = {
 # Configuration for dotfiles and other files
+
    };
 
    home.sessionVariables = {
