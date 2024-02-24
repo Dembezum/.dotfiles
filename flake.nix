@@ -11,20 +11,6 @@
     let 
     system = "x86_64-linux";
 
-
-  Define an overlay that allows unfree packages
-    allowUnfreeOverlay = final: prev: {
-      nixpkgs.config = {
-        allowUnfree = true;
-      };
-    };
-
-# Apply the overlay to the package set
-  pkgs = import nixpkgs {
-    inherit system;
-    overlays = [ allowUnfreeOverlay ];
-  };
-
   pkgs = nixpkgs.legacyPackages.${system};
   lib = nixpkgs.lib;
   in {
