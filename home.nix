@@ -3,7 +3,8 @@
 
 {
     imports = [
-        ./global/sh.nix
+        ./user/core.nix
+        ./user/sh.nix
     ];
 
    home.username = "nixtop";
