@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
-      ./global/core.nix
+    ./global/core.nix
     ];
 
 # Enable flakes
@@ -78,12 +78,6 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-# If you want to use JACK applications, uncomment this
-#jack.enable = true;
-
-# use the example session manager (no others are packaged yet so this is enabled by default,
-# no need to redefine it in your config for now)
-#media-session.enable = true;
   };
 
 # Enable touchpad support (enabled default in most desktopManager).
@@ -123,8 +117,6 @@
 #      settings.PasswordAuthentication = true;
 #   settings.PermitRootLogin = "yes";
 
-};
-
 # Open ports in the firewall.
 networking.firewall.allowedTCPPorts = [
   22
@@ -140,4 +132,5 @@ networking.firewall.enable = true;
 # Before changing this value read the documentation for this option
 # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
 system.stateVersion = "unstable"; # Did you read the comment?
+
 }
