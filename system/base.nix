@@ -1,20 +1,6 @@
 { config, pkgs, ... }:
 
 {
-# Existing Home Manager configuration...
-  home.packages = with pkgs; [
-    nodejs_21
-      neovim
-      kitty 
-      xclip 
-      tmux 
-      htop 
-      btop 
-      tree 
-      git 
-      eza 
-  ];
-
   environment.systemPackages = with pkgs; [
     w3m-nographics # needed for the manual anyway
       testdisk # useful for repairing boot problems
@@ -47,6 +33,10 @@
 # Some compression/archiver tools.
       unzip
       zip
+
+# Editors.
+      neovim
+
       ];
 
 }
