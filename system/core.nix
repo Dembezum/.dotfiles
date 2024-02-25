@@ -3,6 +3,15 @@
 {
   # Existing Home Manager configuration...
   home.packages = with pkgs; [
-    neovim kitty xclip tmux htop btop tree git eza nodejs_21
+    nodejs_21
+    neovim
+    kitty 
+    xclip 
+    tmux 
+    htop 
+    btop 
+    tree 
+    git 
+    eza 
   ];
 }
