@@ -10,7 +10,6 @@
   };
 
 imports = [
-  ./system/core.nix
   ./user/base/sh.nix
   ./user/base/media.nix
   ./user/base/tmux.nix
