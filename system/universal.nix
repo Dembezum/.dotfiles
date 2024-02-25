@@ -10,7 +10,6 @@
       parted
       gptfdisk
       ddrescue
-      ncdu
       ccrypt
       cryptsetup # needed for dm-crypt volumes
 
@@ -33,6 +32,17 @@
 # Some compression/archiver tools.
       unzip
       zip
+
+# Some useful tools.
+      kitty 
+      xclip 
+      ncdu
+      tmux 
+      htop 
+      btop 
+      tree 
+      git 
+      eza 
 
 # Editors.
       neovim
