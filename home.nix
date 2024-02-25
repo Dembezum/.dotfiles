@@ -11,8 +11,9 @@
 
 imports = [
   ./system/core.nix
-  ./user/media.nix
-  ./system/sh.nix
+  ./user/base/sh.nix
+  ./user/base/media.nix
+  ./user/base/tmux.nix
 #  ./system/displaylink.nix
 ];
 
@@ -27,22 +28,6 @@ home.file = {
 
 home.sessionVariables = {
   EDITOR = "nvim";
-};
-
-programs.kitty = {
-  enable = true;
-  extraConfig = ''
-    font_family JetBrains Mono
-    font_size 12
-    background_opacity 0.9
-    opacity 0.9
-    colors 16
-    font_weight regular
-    font_style regular 
-    allow_remote_control yes
-    scrollback_lines 10000
-    enable_audio_bell = false;
-  '';
 };
 
 programs.home-manager.enable = true;
