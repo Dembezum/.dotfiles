@@ -13,6 +13,7 @@ imports = [
   ./system/core.nix
   ./user/media.nix
   ./system/sh.nix
+  ./system/displaylink.nix
 ];
 
 home.username = "nixtop";
