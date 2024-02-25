@@ -10,6 +10,7 @@
     ./hardware-configuration.nix
     ./system/displaylink.nix
     ./system/base.nix
+    ./system/shell.nix
     ];
 
 
