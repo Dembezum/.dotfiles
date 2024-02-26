@@ -5,6 +5,7 @@
     [ 
     ./hardware-configuration.nix
     ./system/universal.nix
+    ./system/displaylink.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -45,8 +46,8 @@
 
 # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "displayLink" "modesetting" ];
-  services.xserver.displayManager.sessionCommands = '' ${pkgs.xorg.xrandr}/bin/xrandr --setprovideroutputsource 2 0 '';
+  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
+# services.xserver.displayManager.sessionCommands = '' ${pkgs.xorg.xrandr}/bin/xrandr --setprovideroutputsource 2 0 '';
 
 
 # Enable the GNOME Desktop Environment.
