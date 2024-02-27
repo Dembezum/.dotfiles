@@ -4,7 +4,7 @@
   imports =
     [ 
     ./hardware-configuration.nix
-    ./system/universal.nix
+    ./universal.nix
     ./system/modules/displaylink
     ];
 

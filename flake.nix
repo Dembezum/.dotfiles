@@ -23,7 +23,9 @@
     homeConfigurations = {
       nixtop = home-manager.lib.homeManagerConfiguration { 
         inherit pkgs;
-        modules = [ ./user/nixtop ];
+        modules = [ 
+	   ./user/nixtop
+ ];
       };
     };
   };
