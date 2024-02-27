@@ -5,7 +5,7 @@
     [ 
     ./hardware-configuration.nix
     ./system/universal.nix
-    ./system/displaylink.nix
+    ./system/modules/displaylink
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
