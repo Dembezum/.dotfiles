@@ -8,31 +8,26 @@
     };
   };
 
-imports = [
-  # Import everything
   imports = [
-  ../base/media.nix
-  ./user/base/sh.nix
-  ../modules/nvim
-  ./home.nix
+    ./../base/media.nix
+    ./user/base/sh.nix
+    ./../modules/nvim
+    ./home.nix
   ];
-];
 
-home.username = "nixtop";
-home.homeDirectory = "/home/nixtop";
+  home.username = "nixtop";
+  home.homeDirectory = "/home/nixtop";
 
-home.file = { };
+  home.file = { };
 
-home.sessionVariables = {
-  EDITOR = "nvim";
-};
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
 
-programs.neovim.withNodeJs = true;
+  programs.neovim.withNodeJs = true;
 
-programs.home-manager.enable = true;
+  programs.home-manager.enable = true;
 
-home.stateVersion = "23.11";
+  home.stateVersion = "23.11";
 }
 
-{
-}
