@@ -1,6 +1,5 @@
 { config, pkgs, lib, ... }:
 
-# Allow unfree packages
 {
   nixpkgs = {
     config = {
@@ -13,17 +12,12 @@ imports = [
   ./user/base/sh.nix
   ./user/base/media.nix
   ./user/base/tmux.nix
-#  ./system/displaylink.nix
 ];
 
 home.username = "nixtop";
 home.homeDirectory = "/home/nixtop";
-home.stateVersion = "23.11";
 
-home.file = {
-# Configuration for dotfiles and other files
-
-};
+home.file = { };
 
 home.sessionVariables = {
   EDITOR = "nvim";
@@ -32,4 +26,6 @@ home.sessionVariables = {
 programs.neovim.withNodeJs = true;
 
 programs.home-manager.enable = true;
+
+home.stateVersion = "23.11";
 }
