@@ -4,6 +4,6 @@
   imports = [
   ../base/media.nix
   ../modules/nvim
-../../home.nix
+./home.nix
   ];
 }
