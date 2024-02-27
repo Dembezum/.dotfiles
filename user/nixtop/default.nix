@@ -8,12 +8,12 @@
     };
   };
 
-  imports = [
-    ./../base/media.nix
-    ./user/base/sh.nix
-    ./../modules/nvim
-    ./home.nix
-  ];
+imports = [
+  ../base/media.nix
+  ../base/sh.nix
+  ../modules/nvim/default.nix
+  ./home.nix
+];
 
   home.username = "nixtop";
   home.homeDirectory = "/home/nixtop";
