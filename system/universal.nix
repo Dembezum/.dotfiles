@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    w3m-nographics # needed for the manual anyway
       testdisk # useful for repairing boot problems
       ms-sys # for writing Microsoft boot sectors / MBRs
       efibootmgr
@@ -45,7 +44,7 @@
       eza 
 
 # Editors.
-      neovim
+      vim
 
       ];
 

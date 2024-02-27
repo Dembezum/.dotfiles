@@ -29,5 +29,7 @@ home.sessionVariables = {
   EDITOR = "nvim";
 };
 
+programs.neovim.withNodeJs = true;
+
 programs.home-manager.enable = true;
 }
