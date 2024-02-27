@@ -25,7 +25,7 @@
         inherit pkgs;
         modules = [ 
 	   ./user/nixtop
-	   ./home.nix
+	   ./user/nixtop/home.nix
  ];
       };
     };
