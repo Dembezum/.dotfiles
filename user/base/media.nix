@@ -6,6 +6,7 @@
     firefox
     discord
     spotify
+    nodejs_21
   ];
 }
 
