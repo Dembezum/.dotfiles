@@ -2,7 +2,7 @@
 {
   # Import everything
   imports = [
-  ../../system/universal
+  ../../universal
   ../base/media.nix
   ];
 }
